@@ -1,11 +1,19 @@
-use_frameworks!
+source 'https://github.com/LovePlayModule/Podspec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+#use_frameworks!
 
 target 'NewsListModule_Example' do
   pod 'NewsListModule', :path => '../'
 
+  pod 'Network'
+  pod 'Tools'
+
+  pod 'YYKit'
+  pod 'Masonry'
+
   target 'NewsListModule_Tests' do
     inherit! :search_paths
 
-    
+
   end
 end
