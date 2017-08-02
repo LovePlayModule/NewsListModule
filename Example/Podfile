@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NewsListModule_Example' do
+  pod 'NewsListModule', :path => '../'
+
+  target 'NewsListModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
