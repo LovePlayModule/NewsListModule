@@ -7,10 +7,11 @@ target 'NewsListModule_Example' do
 
   pod 'Network'
   pod 'Tools'
+  pod 'NewsDetail_Category'
 
   pod 'YYKit'
   pod 'Masonry'
-
+  
   target 'NewsListModule_Tests' do
     inherit! :search_paths
 

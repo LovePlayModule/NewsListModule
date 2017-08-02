@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NewsListModule'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'NewsListModule.'
 
 # This description is used to generate tags and improve search results.
@@ -50,6 +50,7 @@ TODO: Add long description of NewsListModule.
   s.subspec 'Controller' do |ss|
     ss.source_files = 'NewsListModule/Classes/Controller/**/*'
     ss.dependency 'Network'
+    ss.dependency 'NewsDetail_Category'
 
     ss.dependency 'NewsListModule/View'
     ss.dependency 'NewsListModule/Model'

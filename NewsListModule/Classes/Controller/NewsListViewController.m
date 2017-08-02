@@ -15,7 +15,7 @@
 #import "NewsImageTitleCellNode.h"
 //C
 //#import "NewsDetailViewController.h"
-//#import <NewsDetail_Category/Mediator+NewsDetail.h>
+#import <NewsDetail_Category/Mediator+NewsDetail.h>
 //Tool
 #import <Tools/Macros.h>
 #import <YYKit/YYKit.h>
@@ -113,8 +113,8 @@ NSString * const NewsListHost = @"/user/article/list";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NewsListInfoModel *listInfoModel = _newsListDatas[indexPath.row];
-//    UIViewController *detailViewController = [[Mediator sharedInstance] NewsDetail_viewControllerWithNewsID:listInfoModel.docid];
-//    [self.navigationController pushViewController:detailViewController animated:YES];
+    UIViewController *detailViewController = [[Mediator sharedInstance] NewsDetail_viewControllerWithNewsID:listInfoModel.docid];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 #pragma mark - setter / getter
