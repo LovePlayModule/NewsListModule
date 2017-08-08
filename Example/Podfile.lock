@@ -15,26 +15,30 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Masonry (1.0.2)
-  - Mediator (0.1.0)
+  - Mediator (0.1.1)
   - Network (0.1.0):
     - AFNetworking
   - NewsDetail_Category (0.1.0):
     - Mediator
-  - NewsListModule (0.1.1):
-    - NewsListModule/Controller (= 0.1.1)
-    - NewsListModule/Model (= 0.1.1)
-    - NewsListModule/Targets (= 0.1.1)
-    - NewsListModule/View (= 0.1.1)
-  - NewsListModule/Controller (0.1.1):
+  - NewsListModule (0.1.2):
+    - NewsDetail_Category
+    - NewsListModule/Controller (= 0.1.2)
+    - NewsListModule/Model (= 0.1.2)
+    - NewsListModule/Targets (= 0.1.2)
+    - NewsListModule/View (= 0.1.2)
+  - NewsListModule/Controller (0.1.2):
     - Network
     - NewsDetail_Category
     - NewsListModule/Model
     - NewsListModule/View
-  - NewsListModule/Model (0.1.1)
-  - NewsListModule/Targets (0.1.1):
+  - NewsListModule/Model (0.1.2):
+    - NewsDetail_Category
+  - NewsListModule/Targets (0.1.2):
+    - NewsDetail_Category
     - NewsListModule/Controller
-  - NewsListModule/View (0.1.1):
+  - NewsListModule/View (0.1.2):
     - Masonry
+    - NewsDetail_Category
     - NewsListModule/Model
     - Tools
     - YYKit
@@ -60,10 +64,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  Mediator: 5b8aebadf067de253f3f81900b4bea0909373842
+  Mediator: e56124b3519bb79e289f635092f818d3412f225e
   Network: 4a952f29d06daa87d43ab9111f5b31a1e99655eb
   NewsDetail_Category: 8b18efe9ffc3d07b20a1ca07ac67635c3c379241
-  NewsListModule: c68c71bfdbaedaf32f41e0f4040b1194da617b56
+  NewsListModule: d249a43b31bb29df34a6aaee10b900686773039d
   Tools: c7d2011889d8111e9cc2d40c29ab2183d1835de9
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
